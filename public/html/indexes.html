@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Braulio LopChavz</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+
+    <header class="profile container">
+        
+<br><br>
+        <div class="profile_container grid">
+            <div class="profile_data">
+                <div class="profile_border">
+                    <div style="width: 200%; height: 200%;border: 2em;" class="my_profile">
+                        <!-- image -->
+                        <img style="height: 100%; width: 100%;" src="/public/images/s.png" alt="Profile Picture">
+                    </div>
+                </div>
+                <br><br><br><br>
+                <!-- Theme Button -->
+        <div >
+            <i  class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+        <br><br>
+        <!-- Agregar un botón para cambiar idioma -->
+        <div class="language-toggle">
+        <button id="language-button">Ingles</button>
+        <script>
+            var button = document.getElementById("language-button");
+            button.addEventListener("click", function() {
+                window.location.href = "/index.html";
+            });
+        </script>            
+  </div>
+                <h2 class="profile_name">Braulio Ricardo Lopez Chavez</h2>
+                <h3 class="profile_profession">Ingeniero en Tecnologias de la Informacion</h3>
+                <h3 class="profile_profession">Estudiante <br>Universidad Politecnica de Sinaloa, Mazatlan Sinaloa, Mexico.</h3>
+                
+                <!-- socials -->
+                <ul class="profile_social">
+                    <a href="https://www.linkedin.com/in/braulio-ricardo-lopez-chavez-182539277/" target="_blank" class="profile_social_link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/BraulioRLopChav" target="_blank" class="profile_social_link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://gitlab.com/braulioricardoloch" target="_blank" class="profile_social_link">
+                        <i class="ri-gitlab-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div >
+                <h2 class="profile_name" style="text-align: justify;">Hola, mi nombre es Braulio Ricardo Lopez Chavez. En esta web hablaré un poco de mí. Nací en Mazatlán Sinaloa, México.
+                     Actualmente (2023) estoy estudiando Ingeniería en Tecnologías de la Información en la<a style="color: blue;" href="http://www.upsin.edu.mx/"> Universidad Politecnica de Sinaloa (UPSIN)</a>
+                     Me considero una persona responsable y honesta, y soy capaz de adaptarme a los equipos de trabajo con bastante facilidad.</h2>
+                    <br><br>
+                <h2 class="profile_name" style="text-align: justify;">Estudiante de desarrollo web con excelentes habilidades técnicas y pasión por la creación 
+                    digital innovadora con un fuerte enfoque en el desarrollo front-end y el conocimiento back-end. Capacidad demostrada para trabajar en equipo y adaptarse a entornos cambiantes. 
+                    Busco oportunidades para aplicar y ampliar mis habilidades en el campo del desarrollo web.</h2>
+            </div>
+
+        <div class="profile_buttons">
+                <!-- Insert your CV -->
+                <a href="/public/pdf/C.V. Braulio Ricardo Lopez ChavezE.pdf" download="" class="button">
+                    Descargar CV <i class="ri-download-line"></i>
+                </a>
+
+            <div class="profile_buttons_small">
+                <!-- Insert your email -->
+                <a href="mailto: braulioricardoloch@gmail.com" target="_blank" class="button button_small button_gray">
+                    <i class="ri-mail-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <section class="filters container">
+            <!-- Filters Tabs -->
+            <ul class="filters_content">
+                <button class="filters_button filter-tab-active" data-target="#projects">
+                    Proyectos
+                </button>
+                <button class="filters_button" data-target="#skills">
+                    Habilidades
+                </button>
+            </ul>
+            <div class="filters_sections">
+                 <!-- Projects -->
+                 <div class="projects_content grid filters_active" data-content id="projects">
+                    <article class="projects_card">
+                        <img src="/public/images/EcommerceCelshop.png" alt="Project 1" class="projects_img">
+                        <div class="projects_modal">
+                            <div>
+                                <span class="projects_subtitle">Ecommerce</span>
+                                    <h3 class="projects_title">CellShop</h3>
+                                    <a href="https://gitlab.com/proyectofinalcellsh/pfsitiocellshop.git" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills_content grid" data-content id="skills">
+                    <div class="skills_area">
+                        <h3 class="skills_title">
+                            Front-end Developer
+                        </h3>
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">HTML</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">CSS</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">JavaScript</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Bootstrap</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Git</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_area">
+                        <h3 class="skills_title">
+                            Back-end Developer
+                        </h3>
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">MySQL</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Firebase</h3>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Node.js</h3>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Express</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">C#</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">C++</h3>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Java</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <span class="footer_copy">
+            &#169; Copyright 2023. Braulio Ricardo Lopez Chavez
+        </span>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="/public/js/scrollreveal.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="/public/js/main.js"></script>
+
+</body>
+</html>
